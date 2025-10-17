@@ -1,0 +1,113 @@
+{
+  "Sale_CL": {
+    "catboost": {
+      "pr_auc": 0.5087450921871172,
+      "roc_auc": 0.6653039459651617,
+      "log_loss": 0.6302713975659716
+    },
+    "xgb": {
+      "pr_auc": 0.48100315751340733,
+      "roc_auc": 0.6429688690264588,
+      "log_loss": 0.6089729801677765
+    },
+    "lgbm": {
+      "pr_auc": 0.47874519856530523,
+      "roc_auc": 0.6477578589203189,
+      "log_loss": 0.5872534778937467
+    },
+    "logistic": {
+      "pr_auc": 0.4568701563299399,
+      "roc_auc": 0.654430958305825,
+      "log_loss": 0.6036713492973798
+    },
+    "chosen": {
+      "pr_auc": 0.5087450921871172,
+      "roc_auc": 0.6653039459651617,
+      "log_loss": 0.6302713975659716
+    }
+  },
+  "Sale_CC": {
+    "catboost": {
+      "pr_auc": 0.43325095036000383,
+      "roc_auc": 0.6156229040435618,
+      "log_loss": 0.6255804880709676
+    },
+    "logistic": {
+      "pr_auc": 0.4082763252058143,
+      "roc_auc": 0.6280735957802357,
+      "log_loss": 0.534010155818501
+    },
+    "lgbm": {
+      "pr_auc": 0.39847631410547957,
+      "roc_auc": 0.5976189934861937,
+      "log_loss": 0.5485718289465437
+    },
+    "xgb": {
+      "pr_auc": 0.37854773407708087,
+      "roc_auc": 0.5955301419850626,
+      "log_loss": 0.5923564267254643
+    },
+    "chosen": {
+      "pr_auc": 0.43325095036000383,
+      "roc_auc": 0.6156229040435618,
+      "log_loss": 0.6255804880709676
+    }
+  },
+  "Sale_MF": {
+    "catboost": {
+      "pr_auc": 0.30048346453621866,
+      "roc_auc": 0.6126709310400085,
+      "log_loss": 0.6403859368342087
+    },
+    "logistic": {
+      "pr_auc": 0.27935976569791826,
+      "roc_auc": 0.581859943379093,
+      "log_loss": 0.4945978104883416
+    },
+    "xgb": {
+      "pr_auc": 0.2783293968214554,
+      "roc_auc": 0.5833155280166658,
+      "log_loss": 0.5589497771278293
+    },
+    "lgbm": {
+      "pr_auc": 0.271738148591352,
+      "roc_auc": 0.5664961807595749,
+      "log_loss": 0.49598133077795714
+    },
+    "chosen": {
+      "pr_auc": 0.30048346453621866,
+      "roc_auc": 0.6126709310400085,
+      "log_loss": 0.6403859368342087
+    }
+  },
+  "chosen_models": {
+    "Sale_CL": "catboost",
+    "Sale_CC": "catboost",
+    "Sale_MF": "catboost"
+  },
+  "avg_revenue_when_sold": {
+    "CL": 12.043066502463054,
+    "CC": 10.862516233766234,
+    "MF": 9.664974093264249
+  },
+  "dataset_split": {
+    "train_count": 969,
+    "target_count": 646,
+    "train_pct": 0.6,
+    "target_pct": 0.4,
+    "selection_population": "targeting_only"
+  },
+  "optimization": {
+    "capacity_pct": 0.15,
+    "n_clients": 1615,
+    "selected": 100,
+    "expected_total_revenue": 1077.5847956108614,
+    "n_clients_after_rules": 466,
+    "min_propensity_threshold": 0.1,
+    "offer_mix": {
+      "ConsumerLoan": 68,
+      "CreditCard": 32
+    },
+    "selected_from": "targeting_only"
+  }
+}
